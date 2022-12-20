@@ -7,7 +7,6 @@
 }
 
 body{
-    background: linear-gradient(rgb(52, 255, 255), rgb(79, 252, 145));
     font-family: 'Raleway', sans-serif;
     width: 100vw;
     height: 100vh;
@@ -16,6 +15,8 @@ body{
     align-items: center;
     background: url("/public/image/8562848_25501.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
 @keyframes slide{
@@ -205,7 +206,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 150px;
+    margin-top: 100px;
     width: 95%;
     border-radius: 3px;
     height: 50px;
