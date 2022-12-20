@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Agora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');">
+</head>
+<body>
+    <div class="container">
+        <!--Componente do campo de pesquisa-->
+        <div class="search">
+            <h2 class="title">
+                <ion-icon name="sunny"></ion-icon>
+                Clima Agora
+            </h2>
+                <div class="input">
+                    <input type="text" placeholder="Insira o nome de uma cidade">
+                    <button class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+        </div>
+        <!--Componente da saída dos dados-->
+        <div class="data">
+
+            <h3 id="city" class="hide">
+                <i class="fa-solid fa-location-dot"></i>
+                Porto Velho
+                <img src="https://www.countryflagicons.com/FLAT/32/BR.png">
+            </h3>
+
+            <label id="temperature" class="hide">2&deg;C</label>
+
+            <label id="description" class="hide">
+                Nublado
+                <img src="" alt="">
+            </label>
+
+            <div class="informations">
+                <label id="umidity" class="hide">
+                    <i class="fa-solid fa-droplet"></i>
+                    94%
+                </label>
+
+                <label id="wind" class="hide">
+                    <i class="fa-solid fa-wind"></i>
+                    1.54km/h
+                </label>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(52, 255, 255), rgb(79, 252, 145));
+}
+
+@keyframes slide{
+    from{
+        opacity: 0;
+        width: 0;
+        transform: translateX(-150px);
+        
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+        width: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes up{
+   
+   to{
+    transform: translateY(-5px);
+   }
+}
+
+@keyframes load {
+   
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.hide{
+    opacity: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 90%;
+    max-width: 400px;
+    padding-top: 50px;
+}
+
+.load{
+    display: none;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    border: 10px solid white;
+    border-top-color: yellow;
+    animation-name: load;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.486);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    transform: translateY(60%);
+}
+
+.search ion-icon{
+    color: yellow;
+    font-size: 2.5rem;
+}
+
+.input{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.input input{
+    border-style: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.637);
+    border-radius: 3px;
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.input button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 40px;
+    color: white;
+    background: linear-gradient(rgb(5, 255, 243), rgb(0, 224, 86));
+    border-radius: 3px;
+    border-style: none;
+    padding: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418);
+    width: 50px;
+    cursor: pointer;
+}
+
+.input button i{
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.212);
+}
+
+.data{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
+    padding: 5px;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    opacity: 0;
+}
+
+#city{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#temperature{
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    font-weight: 100;
+}
+
+#description{
+    margin-bottom: 1rem;
+}
+
+.informations{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#umidity{
+    padding:10px
+}
+
+#wind{
+    padding: 10px;
+}
+
