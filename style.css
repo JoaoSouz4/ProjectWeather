@@ -7,13 +7,15 @@
 }
 
 body{
+    background: linear-gradient(rgb(52, 255, 255), rgb(79, 252, 145));
     font-family: 'Raleway', sans-serif;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(52, 255, 255), rgb(79, 252, 145));
+    background: url("8562848_25501.jpg");
+    background-size: cover;
 }
 
 @keyframes slide{
@@ -47,7 +49,9 @@ body{
 }
 
 .hide{
-    opacity: 1;
+    opacity: 0;
+    transition: 1s all;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.329);
 }
 
 .container{
@@ -93,7 +97,7 @@ body{
     border-radius: 30px;
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.486);
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -130,13 +134,14 @@ body{
     font-weight: bold;
     height: 40px;
     color: white;
-    background: linear-gradient(rgb(5, 255, 243), rgb(0, 224, 86));
+    background:rgb(0, 224, 86);
     border-radius: 3px;
     border-style: none;
     padding: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418);
     width: 50px;
     cursor: pointer;
+    background: linear-gradient(75deg, rgb(0, 253, 97),rgb(0, 177, 74));
 }
 
 .input button i{
@@ -160,6 +165,7 @@ body{
     animation-fill-mode: forwards;
     animation-timing-function: ease;
     opacity: 0;
+    backdrop-filter: blur(3px);
 }
 
 #city{
