@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');">
 </head>
 <body>
+
     <div class="container">
         <!--Componente do campo de pesquisa-->
         <div class="search">
@@ -18,7 +19,7 @@
                 Clima Agora
             </h2>
                 <div class="input">
-                    <input type="text" placeholder="Insira o nome de uma cidade">
+                    <input type="text" placeholder="Insira o nome de uma cidade" id="input-search">
                     <button class="btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
@@ -27,30 +28,34 @@
         <!--Componente da saída dos dados-->
         <div class="data">
 
-            <h3 id="city" class="hide">
+            <div id="city" class="hide">
                 <i class="fa-solid fa-location-dot"></i>
-                Porto Velho
-                <img src="https://www.countryflagicons.com/FLAT/32/BR.png">
-            </h3>
+                <h3 id="city-name"></h3>
+                <img src="" id="country-flag">
+            </div>
 
-            <label id="temperature" class="hide">2&deg;C</label>
+            <label id="temperature" class="hide">&deg;C</label>
 
             <label id="description" class="hide">
-                Nublado
-                <img src="" alt="">
+                <img src="" id="icon">
             </label>
 
             <div class="informations" class="hide">
-                <label id="umidity" class="hide">
+                <label class="hide">
                     <i class="fa-solid fa-droplet"></i>
-                    94%
+                    <p id="umidity"></p>
                 </label>
 
-                <label id="wind" class="hide">
+                <label class="hide">
                     <i class="fa-solid fa-wind"></i>
-                    1.54km/h
+                    <p id="wind"></p>
                 </label>
             </div>
+        </div>
+
+        <div class="msg">
+            <ion-icon name="alert"></ion-icon>
+            <p class="msg-alert">Barra de pesquisa está vazia</p>
         </div>
     </div>
 
@@ -59,4 +64,5 @@
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script src="/src/JS/script.js"></script>
 <script src="/src/JS/api.js"></script>
+<script src="https://countryflagsapi.com/:filetype/:code"></script>
 </html>
