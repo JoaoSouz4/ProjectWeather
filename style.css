@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/8562848_25501.jpg");
+    background: url("8562848_25501.jpg");
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
